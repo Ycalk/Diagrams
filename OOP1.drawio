@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T17:33:30.324Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ly1CUU3s_-1_tQIiFXg0" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T17:41:19.889Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="vzOlDq6Eiwx0AaJEWLQw" version="22.1.8" type="github">
   <diagram name="Страница — 1" id="WSpf2R3lcupBbCnASCNv">
-    <mxGraphModel dx="2333" dy="1258" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1877" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,13 +9,13 @@
             <mxRectangle x="340" y="90" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="o2LxJ038xUt1YhMu7u4r-7" value="- Players : Player[]&lt;br&gt;- Line : Domino[]&lt;br&gt;- AvailableDominos : Domino[]&lt;br&gt;- CurrentPlayerStep : int&lt;br&gt;- LatsDomino : Domino&lt;br&gt;+ StartHandDominosCount : int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-6" vertex="1">
+        <mxCell id="o2LxJ038xUt1YhMu7u4r-7" value="- Players : Player[]&lt;br&gt;- Line : Domino[]&lt;br&gt;- CurrentPlayerStep : int&lt;br&gt;- LatsDomino : Domino&lt;br&gt;+ StartHandDominosCount : int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-6" vertex="1">
           <mxGeometry y="26" width="270" height="114" as="geometry" />
         </mxCell>
         <mxCell id="o2LxJ038xUt1YhMu7u4r-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="o2LxJ038xUt1YhMu7u4r-6" vertex="1">
           <mxGeometry y="140" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="o2LxJ038xUt1YhMu7u4r-9" value="+ Game (playersCount : int)&lt;br&gt;&lt;br&gt;- CreatePlayers (playersCount : int) -&amp;gt; void&lt;br&gt;- StartGame() -&amp;gt; void&lt;br&gt;- PlayerMove() -&amp;gt; void&lt;br&gt;- HasWinner() -&amp;gt; bool&lt;br&gt;- GiveDomino() -&amp;gt; void&lt;br&gt;+ FinishGame () -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-6" vertex="1">
+        <mxCell id="o2LxJ038xUt1YhMu7u4r-9" value="Game (playersCount : int)&lt;br&gt;&lt;br&gt;- CreatePlayers (playersCount : int) -&amp;gt; void&lt;br&gt;- StartGame() -&amp;gt; void&lt;br&gt;- PlayerMove() -&amp;gt; void&lt;br&gt;- HasWinner() -&amp;gt; bool&lt;br&gt;- GiveDomino() -&amp;gt; void&lt;br&gt;+ FinishGame () -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-6" vertex="1">
           <mxGeometry y="148" width="270" height="122" as="geometry" />
         </mxCell>
         <mxCell id="o2LxJ038xUt1YhMu7u4r-10" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -29,10 +29,10 @@
         <mxCell id="o2LxJ038xUt1YhMu7u4r-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="o2LxJ038xUt1YhMu7u4r-10" vertex="1">
           <mxGeometry y="90" width="470" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="o2LxJ038xUt1YhMu7u4r-13" value="+ Player (name : string, nickname : string, startHandDominosCount : int)&lt;br&gt;&lt;br&gt;+ MakeStep (lastDomino : Domino) -&amp;gt; Domino&lt;br&gt;+ ReciveDomino(domino : Domino) -&amp;gt; void&lt;br&gt;- StepValid (lastDomino : Domino, selectedDomino) -&amp;gt; bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-10" vertex="1">
+        <mxCell id="o2LxJ038xUt1YhMu7u4r-13" value="Player (name : string, nickname : string, startHandDominosCount : int)&lt;br&gt;&lt;br&gt;+ MakeStep (lastDomino : Domino) -&amp;gt; Domino&lt;br&gt;+ ReciveDomino(domino : Domino) -&amp;gt; void&lt;br&gt;- StepValid (lastDomino : Domino, selectedDomino) -&amp;gt; bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-10" vertex="1">
           <mxGeometry y="98" width="470" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="ggb_UhmxL2kMy4uVyJzx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2LxJ038xUt1YhMu7u4r-14" target="n3KIZCUV4Ak1s4q1xW3Y-8">
+        <mxCell id="ggb_UhmxL2kMy4uVyJzx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="o2LxJ038xUt1YhMu7u4r-14" target="n3KIZCUV4Ak1s4q1xW3Y-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o2LxJ038xUt1YhMu7u4r-14" value="Hand" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -44,27 +44,42 @@
         <mxCell id="o2LxJ038xUt1YhMu7u4r-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="o2LxJ038xUt1YhMu7u4r-14" vertex="1">
           <mxGeometry y="66" width="250" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="o2LxJ038xUt1YhMu7u4r-17" value="+ Hand (dominosValues: int[][])&lt;br&gt;&lt;br&gt;+ GetHand() -&amp;gt; List&amp;lt;Domino&amp;gt;&lt;br&gt;+ ChooseDomino() -&amp;gt; Domino&lt;br&gt;+ AddDomino (domino: Domino) -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-14" vertex="1">
+        <mxCell id="o2LxJ038xUt1YhMu7u4r-17" value="Hand (dominosValues: int[][])&lt;br&gt;&lt;br&gt;+ GetHand() -&amp;gt; List&amp;lt;Domino&amp;gt;&lt;br&gt;+ ChooseDomino() -&amp;gt; Domino&lt;br&gt;+ AddDomino (domino: Domino) -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="o2LxJ038xUt1YhMu7u4r-14" vertex="1">
           <mxGeometry y="74" width="250" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="n3KIZCUV4Ak1s4q1xW3Y-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Domino&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- firtsValue&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- secondValue&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Domino(firstValue:int, secondValue:int)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetDomino() -&amp;gt; int[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="n3KIZCUV4Ak1s4q1xW3Y-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Domino&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- firtsValue&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- secondValue&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;Domino(firstValue:int, secondValue:int)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetDomino() -&amp;gt; int[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="532" y="327.5" width="248" height="135" as="geometry" />
         </mxCell>
         <mxCell id="n3KIZCUV4Ak1s4q1xW3Y-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o2LxJ038xUt1YhMu7u4r-9" target="o2LxJ038xUt1YhMu7u4r-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ggb_UhmxL2kMy4uVyJzx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.027;entryY=0.129;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.447;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="o2LxJ038xUt1YhMu7u4r-13" target="o2LxJ038xUt1YhMu7u4r-17">
+        <mxCell id="ggb_UhmxL2kMy4uVyJzx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.027;entryY=0.129;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.447;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="o2LxJ038xUt1YhMu7u4r-13" target="o2LxJ038xUt1YhMu7u4r-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ggb_UhmxL2kMy4uVyJzx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2LxJ038xUt1YhMu7u4r-13" target="n3KIZCUV4Ak1s4q1xW3Y-8">
+        <mxCell id="ggb_UhmxL2kMy4uVyJzx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="o2LxJ038xUt1YhMu7u4r-13" target="n3KIZCUV4Ak1s4q1xW3Y-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ggb_UhmxL2kMy4uVyJzx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2LxJ038xUt1YhMu7u4r-9" target="n3KIZCUV4Ak1s4q1xW3Y-8">
+        <mxCell id="ggb_UhmxL2kMy4uVyJzx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="o2LxJ038xUt1YhMu7u4r-9" target="n3KIZCUV4Ak1s4q1xW3Y-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="325" y="395" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="LhdZazNxD8STSTCbhV_u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="LhdZazNxD8STSTCbhV_u-1" target="n3KIZCUV4Ak1s4q1xW3Y-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-35" y="430" />
+              <mxPoint x="316" y="430" />
+              <mxPoint x="316" y="429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LhdZazNxD8STSTCbhV_u-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DominosKit&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- AvailableDominos : Domino[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DominosKit ()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ GenerateDomino() -&amp;gt; Domino&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ GiveBackDomino (domino : Domino) -&amp;gt; void&amp;nbsp;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="260" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LhdZazNxD8STSTCbhV_u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o2LxJ038xUt1YhMu7u4r-7" target="LhdZazNxD8STSTCbhV_u-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
