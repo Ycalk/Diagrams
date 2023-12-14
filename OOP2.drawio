@@ -1,9 +1,113 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T17:07:26.007Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.8" etag="gawvMhznkegJksCD129f" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T16:09:24.020Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="85qOHfd2qf3u_l6fFpjn" version="22.1.8" type="github">
   <diagram name="Страница — 1" id="x8ECYzDwlJlLTgmME1dZ">
-    <mxGraphModel>
+    <mxGraphModel dx="1400" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pja9zkraejhfnubJRsCh-1" value="Game" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="270" height="270" as="geometry">
+            <mxRectangle x="340" y="90" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-2" value="- Players : Player[]&lt;br&gt;- CurrentPlayerStep : int&lt;br&gt;+ StartHandCardsCount : int&lt;br&gt;- table : Table" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-1">
+          <mxGeometry y="26" width="270" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="pja9zkraejhfnubJRsCh-1">
+          <mxGeometry y="140" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-4" value="Game (playersCount : int)&lt;br&gt;&lt;br&gt;- CreatePlayers (playersCount : int) -&amp;gt; void&lt;br&gt;- StartGame() -&amp;gt; void&lt;br&gt;- PlayerMove() -&amp;gt; void&lt;br&gt;- GiveCard(player : Player) -&amp;gt; void&lt;br&gt;+ FinishGame () -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-1">
+          <mxGeometry y="148" width="270" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-5" target="pja9zkraejhfnubJRsCh-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-5" target="pja9zkraejhfnubJRsCh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-5" target="pja9zkraejhfnubJRsCh-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Table&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;// Dictionary key - Uncovered/covered card (if uncovered&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;value - null), key value - covering card&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Cards : Dictionary&amp;lt;Card, Card&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Table()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetCards() -&amp;gt; Dictionary&amp;lt;Card, Card&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddCard(card : Card) -&amp;gt; void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddCoveringCard (UnCovered : Card, covering : Card) -&amp;gt; void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ClearTable() -&amp;gt; void&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="460" width="390" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Card&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- suit : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- value : int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Card (value : int, suit : string)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;// key - suit, key value - value&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GetCard () -&amp;gt; Dictionary&amp;lt;string, int&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="810" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-7" target="pja9zkraejhfnubJRsCh-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="970" />
+              <mxPoint x="830" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Deck&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Cards : Card[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Deck()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GiveCard() -&amp;gt; Card&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="700" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-10" value="Hand" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="670" width="250" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-11" value="-&amp;nbsp; Cards: List&amp;lt;Card&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-10">
+          <mxGeometry y="26" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="pja9zkraejhfnubJRsCh-10">
+          <mxGeometry y="66" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-13" value="Hand (startHand : Dictionary&amp;lt;string, int&amp;gt;)&lt;br&gt;&lt;br&gt;+ GetHand() -&amp;gt; List&amp;lt;Card&amp;gt;&lt;br&gt;+ ChooseCard() -&amp;gt; Card[]&lt;br&gt;+ AddCard (card: Card) -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-10">
+          <mxGeometry y="74" width="250" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-14" target="pja9zkraejhfnubJRsCh-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-14" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="300" width="470" height="190" as="geometry">
+            <mxRectangle x="250" y="350" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-15" value="+ Hand : Hand&lt;br&gt;+ Name : string&lt;br&gt;+ Nickname : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-14">
+          <mxGeometry y="26" width="470" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="pja9zkraejhfnubJRsCh-14">
+          <mxGeometry y="90" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-17" value="Player (name : string, nickname : string, startHandCardsCount : int)&lt;br&gt;&lt;br&gt;+ MakeStep (type : stepType, table : Dictionary&amp;lt;Card, Card&amp;gt;) -&amp;gt; Card[]&lt;br&gt;+ ReciveCard(card : Card) -&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pja9zkraejhfnubJRsCh-14">
+          <mxGeometry y="98" width="470" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-21" target="pja9zkraejhfnubJRsCh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-21" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PlayedCards&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Cards : Card[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;PlayedCards()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ Add (card : Card) -&amp;gt; void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="380" y="760" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;STATIC GameRules&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ StepType : Enum&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ HasWinner(line : Domino[]) -&amp;gt; bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ StepValid(table : Dictionary&amp;lt;Card, Card&amp;gt;, step : StepType, card) -&amp;gt; bool&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="20" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-4" target="pja9zkraejhfnubJRsCh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-4" target="pja9zkraejhfnubJRsCh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-2" target="pja9zkraejhfnubJRsCh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-17" target="pja9zkraejhfnubJRsCh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-13" target="pja9zkraejhfnubJRsCh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-13" target="pja9zkraejhfnubJRsCh-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="787" />
+              <mxPoint x="1460" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pja9zkraejhfnubJRsCh-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pja9zkraejhfnubJRsCh-2" target="pja9zkraejhfnubJRsCh-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
