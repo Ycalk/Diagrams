@@ -1,5 +1,3 @@
-# Diagrams
-
 # To see using drawio
 
 OOP1:
